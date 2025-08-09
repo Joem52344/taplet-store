@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joex - تابات Samsung Galaxy A7</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    body {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px;
+      color: #222;
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.3);
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      background-color: #a9a9a9; /* رمادي متوسط (غير فاتح جدا) */
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    header .left {
+      font-size: 36px;
+      font-weight: 900;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .middle {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    header .right {
+      display: flex;
+      gap: 12px;
+    }
+
+    header .right a {
+      background-color: #222;
+      color: #fff;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    header .right a:hover {
+      background-color: #5a5a5a;
+    }
+
+    .tabs-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .tab-card {
+      background-color: #f8f8f8; /* أوف-وايت */
+      border-radius: 15px;
+      width: 230px;
+      padding: 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: 700;
+      color: #111;
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .tab-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .tab-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      font-size: 20px;
+      margin-top: 12px;
+      color: #a67c52;
+    }
+
+    .unavailable {
+      background-color: #c0392b;
+      color: white;
+      font-weight: 900;
+      padding: 5px 12px;
+      border-radius: 10px;
+      margin-top: 12px;
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+
+    .best-seller {
+      background-color: #27ae60;
+      color: white;
+      font-weight: 900;
+      padding: 5px 12px;
+      border-radius: 10px;
+      margin-top: 12px;
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* النص تحت التابات */
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #eee; /* أبيض فاتح */
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left">Joex</div>
+    <div class="middle">📍 الدقهليه المنصورة شارع الدراسات - لا يوجد شحن حالياً</div>
+    <div class="right">
+      <a href="https://wa.me/201006545991" target="_blank">📱 واتساب</a>
+      <a href="tel:+201006545991">📞 مكالمة</a>
+    </div>
+  </header>
+
+  <div class="tabs-container">
+
+    <a href="tap1.html">
+      <div class="tab-card">
+        <img src="images/tap1/tap1index.jpg" alt="تاب 1" />
+        Samsung Galaxy A7   
+        <div class="price">3900 جنيه</div>
+      </div>
+    </a>
+
+    <a href="tap2.html">
+      <div class="tab-card">
+        <img src="images/tap2/tap2index.jpg" alt="تاب 3" />
+        Tap Samsung Galaxy A7
+        <div class="price">3800 جنيه</div>
+        <div class="best-seller">best seller الأكثر مبيعًا</div>
+      </div>
+    </a>
+
+    <a href="tap3.html">
+      <div class="tab-card">
+        <img src="images/tap3/tap3index.jpg" alt="تاب 3" />
+        Tap Samsung Galaxy A7
+        <div class="price">3700 جنيه</div>
+      </div>
+    </a>
+
+    <a href="#" onclick="alert('نفذت كميه هذا العنصر حاليا وسيتم توفيره في اقرب وقت'); return false;">
+      <div class="tab-card">
+        <img src="images/tap4.jpg" alt="تاب 4" />
+        Tap Samsung Galaxy A7
+        <div class="price">3500 جنيه</div>
+        <div class="unavailable">Unavailable Now نفذت الكميه حالياً</div>
+      </div>
+    </a>
+
+  </div><!-- نهاية tabs-container -->
+
+  <div class="footer-note">
+    من يد طالب الثانوية العامة إليك مباشرة
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تفاصيل تاب </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px auto;
+      color: #eee;  /* لون النص فضي فاتح */
+      max-width: 600px;
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      background-color: #000; /* خلفية سودا */
+    }
+
+    img#mainImage {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .thumbs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .thumbs img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .thumbs img.selected {
+      border-color: #bbb; /* لون فضي */
+    }
+
+    .description-title {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ccc; /* فضي غامق */
+      margin-bottom: 10px;
+      border-bottom: 3px solid #bbb; /* خط سفلي فضي */
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    .description-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ddd; /* فضي فاتح */
+      margin-bottom: 10px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .note-red {
+      color: #c0392b; /* أحمر */
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .includes {
+      background-color: #444; /* رمادي داكن */
+      color: #eee;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 700;
+      border-top: 2px solid #bbb; /* فضي */
+      border-bottom: 2px solid #bbb;
+      margin-bottom: 30px;
+      text-align: right;
+      color: #ddd;
+    }
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #666; /* رمادي متوسط */
+      color: #eee;
+    }
+
+    button {
+      background-color: #5a6b47; /* لون أخضر داكن هادي */
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-weight: 900;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto 20px auto;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #4a5937;
+    }
+
+    #contact {
+      display: none;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #contact a {
+      color: #9cc68c;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      color: #bbb; /* فضي */
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Samsung Galaxy A7</h1>
+
+  <!-- الصورة الكبيرة -->
+  <img id="mainImage" src="images/tap2/tap2- (1).jpg" alt="صورة تاب 2" />
+
+  <!-- الصور المصغرة -->
+  <div class="thumbs">
+    <img src="images/tap2/tap2- (1).jpg" alt="صورة 1" class="selected" onclick="changeImage(this)" />
+    <img src="images/tap2/tap2- (2).jpg" alt="صورة 2" onclick="changeImage(this)" />
+    <img src="images/tap2/tap2- (3).jpg" alt="صورة 3" onclick="changeImage(this)" />
+    <img src="images/tap2/tap2- (4).jpg" alt="صورة 4" onclick="changeImage(this)" />
+    <img src="images/tap2/tap2- (5).jpg" alt="صورة 5" onclick="changeImage(this)" />
+    <img src="images/tap2/tap2-(6).jpg" alt="صورة 6" onclick="changeImage(this)" />
+
+  </div>
+
+  <div class="description-title">وصف</div>
+  <div class="description-text">
+    تابلت ثانوية عامة بحالة الجديد لا يوجد به خدش يباع من يد طالب ثانوية عامة مباشرة إليك خارج المنظومة رسمياً قبل البيع بحيث يكون جاهز للاستخدام
+  </div>
+  <div class="note-red">
+    في حالة إن محتاج التابلت داخل المنظومة لا يوجد مشكلة فقط برجاء إخبارنا
+  </div>
+
+  <div class="includes">المشتملات: شاحن - جراب - كرتونة - خارج المنظومة رسمياً</div>
+
+  <ul>
+    <li>رام: 3 جيجا</li>
+    <li>مساحة: 32 جيجا + بيركب ميموري كارد</li>
+    <li>شريحتي اتصال</li>
+    <li>شاشة 10 بوصة</li>
+    <li>بطارية 7000 مللي أمبير</li>
+    <li>لون: جراي</li>
+    <li>4 سماعات ستيريو مع Dolby Atmos</li>
+    <li>تايب سي</li>
+    <li>يشغل ببجي ومناسب للدراسة والشغل والأطفال</li>
+    <li>السعر: 3800 جنيه</li>
+  </ul>
+
+  <button onclick="document.getElementById('contact').style.display = 'block'; this.style.display = 'none';">شراء / Buy</button>
+
+  <div id="contact">
+<a href="https://wa.me/201006545991?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%D8%A9%20%D8%AA%D8%A7%D8%A8%20-%203800" target="_blank" rel="noopener noreferrer">واتساب</a>
+    <a href="tel:+201006545991">مكالمة</a>
+  </div>
+
+  <a href="index.html" class="back-link">رجوع للصفحة الرئيسية</a>
+
+  <script>
+    function changeImage(element) {
+      // نغير الصورة الكبيرة
+      document.getElementById('mainImage').src = element.src;
+      // نحذف الكلاس selected من كل الصور المصغرة
+      let thumbs = document.querySelectorAll('.thumbs img');
+      thumbs.forEach(img => img.classList.remove('selected'));
+      // نضيف كلاس selected للصورة اللي ضغطنا عليها
+      element.classList.add('selected');
+    }
+  </script>
+
+</body>
+</html>
